@@ -15,7 +15,12 @@ public class Nomina
     {
         this.clave = clave;
         this.nombre = nombre;
-        this.horasTrabajadas = horasTrabajadas;
+        /**
+         *Usamos el setter en el cosntructor para evitar confilctos con las horas extra y que en
+         * caso de que se ingresen 60 o mas horas, muestre 10 y no 20 horas extra. Respetando el limite
+         * de la asignacion en cuanto a la cantidad maxima de horas (que son 50)
+         */
+        setHorasTrabajadas(horasTrabajadas);
         this.pagoPorHora = pagoPorHora;
     }
 
