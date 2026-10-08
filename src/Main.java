@@ -19,6 +19,10 @@ public class Main
         String nombre = entrada.nextLine();
         System.out.println("Horas trabajadas del Empleado: ");
         int horasTrabajadas = entrada.nextInt();
+        if(horasTrabajadas > 50)
+        {
+            System.out.println("Advertencia: solo se consideran 50 horas como maximo.");
+        }
         System.out.println("Pago por hora del Empleado: ");
         double pagoPorHora = entrada.nextDouble();
 
